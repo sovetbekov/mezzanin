@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продукция</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" href="https://img.icons8.com/ios-filled/256/open-box.png">
+    <link rel="stylesheet" href="assets/css/products.css">
+</head>
+<body>
+    <div class="main flex flex-col flex-wrap mx-4 my-16 lg:my-16 lg:mx-44">
+        <div class="navbar flex flex-col lg:flex-row flex-wrap">
+            <a href = "index.html" class = "basis-1/4 mt-4" id = "title">mezzanin.</a>
+
+            <div class="inputGroup basis-1/4">
+                <input type="text" required="" autocomplete="off">
+                <label for="name">Поиск</label>
+            </div>
+
+
+            <div class="actions flex flex-row basis-1/2 justify-end mt-1">
+                <div class="wishlist mr-10">
+                    <p><a href=""><img src="assets/img/wishlist.png" width = "100px"></a></p>
+                </div>
+
+                <div class="cart mt-6">
+                    <p><a href=""><img src="assets/img/cart.png" width = "100px"></a></p>
+                </div>
+            </div>
+
+            
+        </div>
+
+                <div class="feed flex flex-col lg:flex-row ">
+                    <div class="filter text-center mb-12 lg:text-left lg:basis-1/4">
+                        <div class="byCategory mt-5">    
+                            <p id = "category-title" class = "mb-8">Категории</p>
+
+                            <div class="category-id">                                     
+                                <input id="checkbox" type="checkbox">
+                                <label id = "category-name" for="checkbox">Компьютерная периферия</label>                        
+                            </div>
+
+                            <div class="category-id">                                     
+                                <input id="checkbox" type="checkbox">
+                                <label id = "category-name" for="checkbox">Лабораторные продукции</label>                        
+                            </div>
+
+
+                            <div class="category-id">                                     
+                                <input id="checkbox" type="checkbox">
+                                <label id = "category-name" for="checkbox">Оргтехника</label>                        
+                            </div>
+
+                            <div class="category-id">                                     
+                                <input id="checkbox" type="checkbox">
+                                <label id = "category-name" for="checkbox">Серверы и опции</label>                        
+                            </div>
+
+                            <div class="category-id">                                     
+                                <input id="checkbox" type="checkbox">
+                                <label id = "category-name" for="checkbox">Носители</label>                        
+                            </div>
+
+                            <div class="category-id">                                     
+                                <input id="checkbox" type="checkbox">
+                                <label id = "category-name" for="checkbox">Оптика</label>                        
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="byCategory mt-12">    
+                            <p id = "category-title" class = "mb-8">Бренды</p>
+
+                            <div class="category-id">                                     
+                                <input id="checkbox" type="checkbox">
+                                <label id = "category-name" for="checkbox">Hewlett Packard</label>                        
+                            </div>
+
+                            <div class="category-id">                                     
+                                <input id="checkbox" type="checkbox">
+                                <label id = "category-name" for="checkbox">Optos Plc</label>                        
+                            </div>
+
+
+                            <div class="category-id">                                     
+                                <input id="checkbox" type="checkbox">
+                                <label id = "category-name" for="checkbox">Thermo Fisher Scientific</label>                        
+                            </div>
+
+                            <div class="category-id">                                     
+                                <input id="checkbox" type="checkbox">
+                                <label id = "category-name" for="checkbox">Xiaomi</label>                        
+                            </div>
+
+                            <div class="category-id">                                     
+                                <input id="checkbox" type="checkbox">
+                                <label id = "category-name" for="checkbox">Apple</label>                        
+                            </div>
+
+                            <div class="category-id">                                     
+                                <input id="checkbox" type="checkbox">
+                                <label id = "category-name" for="checkbox">Mezzanin</label>                        
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+                    <div class="products lg:ml-14 lg:basis-3/4">
+                        <div class="prods grid grid-cols-1 gap-8 text-center lg:text-left lg:grid-cols-3 ">
+                            
+
+                            <div class="prod-id mt-8">
+                                <img src="assets/img/1.png" id="prod-img">
+            
+                                <p class = "mt-5" id = "prod-title">Панорамный офтальмоскоп</p>
+                                <p class = "mt-1 mb-3.5" id = "company-title">Optos Plc, Великобритания</p>
+            
+                                <p id = "prod-price">320 000 ₸</p>
+            
+                                <div class="category flex flex-row flex-basis mt-3 justify-center lg:justify-start">
+                                    <img src="assets/img/lab.png" width="30" height="20">
+                                    <p id = "prod-category">Лабораторные продукции</p>
+                                </div>
+            
+                                <button class="button-6 mt-5" role="button">Подробнее</button>
+                                    
+                            </div>
+                            <div class="prod-id mt-8">
+                                <img src="assets/img/2.png" id="prod-img">
+            
+                                <p class = "mt-5" id = "prod-title">Mi 23.8” Desktop Monitor 1C</p>
+                                <p class = "mt-1 mb-3.5" id = "company-title">Xiaomi, Китай</p>
+            
+                                <p id = "prod-price">77 000 ₸</p>
+            
+                                <div class="category flex flex-row flex-basis mt-3 justify-center lg:justify-start">
+                                    <img src="assets/img/comp.png" width="30" height="20">
+                                    <p id = "prod-category">Компьютерная периферия</p>
+                                </div>
+            
+                                <a href="xiaomi.html" class="button-6 mt-5" role="button">Подробнее</a>
+                                    
+                            </div>
+                            <div class="prod-id mt-8">
+                                <img src="assets/img/3.png" id="prod-img">
+            
+                                <p class = "mt-5" id = "prod-title">NGS-секвенатор Genexus</p>
+                                <p class = "mt-1 mb-3.5" id = "company-title">Thermo Fisher Scientific, США</p>
+            
+                                <p id = "prod-price">493 990 ₸</p>
+            
+                                <div class="category flex flex-row flex-basis mt-3 justify-center lg:justify-start">
+                                    <img src="assets/img/lab.png" width="30" height="20">
+                                    <p id = "prod-category">Лабораторные продукции</p>
+                                </div>
+            
+                                <button class="button-6 mt-5" role="button">Подробнее</button>
+                                    
+                            </div>
+
+
+
+                            <div class="prod-id mt-8">
+                                <img src="assets/img/1.png" id="prod-img">
+            
+                                <p class = "mt-5" id = "prod-title">Панорамный офтальмоскоп</p>
+                                <p class = "mt-1 mb-3.5" id = "company-title">Optos Plc, Великобритания</p>
+            
+                                <p id = "prod-price">320 000 ₸</p>
+            
+                                <div class="category flex flex-row flex-basis mt-3 justify-center lg:justify-start">
+                                    <img src="assets/img/lab.png" width="30" height="20">
+                                    <p id = "prod-category">Лабораторные продукции</p>
+                                </div>
+            
+                                <button class="button-6 mt-5" role="button">Подробнее</button>
+                                    
+                            </div>
+                            <div class="prod-id mt-8">
+                                <img src="assets/img/2.png" id="prod-img">
+            
+                                <p class = "mt-5" id = "prod-title">Mi 23.8” Desktop Monitor 1C</p>
+                                <p class = "mt-1 mb-3.5" id = "company-title">Xiaomi, Китай</p>
+            
+                                <p id = "prod-price">77 000 ₸</p>
+            
+                                <div class="category flex flex-row flex-basis mt-3 justify-center lg:justify-start">
+                                    <img src="assets/img/comp.png" width="30" height="20">
+                                    <p id = "prod-category">Компьютерная периферия</p>
+                                </div>
+            
+                                <button class="button-6 mt-5" role="button">Подробнее</button>
+                                    
+                            </div>
+                            <div class="prod-id mt-8">
+                                <img src="assets/img/3.png" id="prod-img">
+            
+                                <p class = "mt-5" id = "prod-title">NGS-секвенатор Genexus</p>
+                                <p class = "mt-1 mb-3.5" id = "company-title">Thermo Fisher Scientific, США</p>
+            
+                                <p id = "prod-price">493 990 ₸</p>
+            
+                                <div class="category flex flex-row flex-basis mt-3 justify-center lg:justify-start">
+                                    <img src="assets/img/lab.png" width="30" height="20">
+                                    <p id = "prod-category">Лабораторные продукции</p>
+                                </div>
+            
+                                <button class="button-6 mt-5" role="button">Подробнее</button>
+                                    
+                            </div>
+
+
+
+
+                            <div class="prod-id mt-8">
+                                <img src="assets/img/1.png" id="prod-img">
+            
+                                <p class = "mt-5" id = "prod-title">Панорамный офтальмоскоп</p>
+                                <p class = "mt-1 mb-3.5" id = "company-title">Optos Plc, Великобритания</p>
+            
+                                <p id = "prod-price">320 000 ₸</p>
+            
+                                <div class="category flex flex-row flex-basis mt-3 justify-center lg:justify-start">
+                                    <img src="assets/img/lab.png" width="30" height="20">
+                                    <p id = "prod-category">Лабораторные продукции</p>
+                                </div>
+            
+                                <button class="button-6 mt-5" role="button">Подробнее</button>
+                                    
+                            </div>
+                            <div class="prod-id mt-8">
+                                <img src="assets/img/2.png" id="prod-img">
+            
+                                <p class = "mt-5" id = "prod-title">Mi 23.8” Desktop Monitor 1C</p>
+                                <p class = "mt-1 mb-3.5" id = "company-title">Xiaomi, Китай</p>
+            
+                                <p id = "prod-price">77 000 ₸</p>
+            
+                                <div class="category flex flex-row flex-basis mt-3 justify-center lg:justify-start">
+                                    <img src="assets/img/comp.png" width="30" height="20">
+                                    <p id = "prod-category">Компьютерная периферия</p>
+                                </div>
+            
+                                <button class="button-6 mt-5" role="button">Подробнее</button>
+                                    
+                            </div>
+                            <div class="prod-id mt-8">
+                                <img src="assets/img/3.png" id="prod-img">
+            
+                                <p class = "mt-5" id = "prod-title">NGS-секвенатор Genexus</p>
+                                <p class = "mt-1 mb-3.5" id = "company-title">Thermo Fisher Scientific, США</p>
+            
+                                <p id = "prod-price">493 990 ₸</p>
+            
+                                <div class="category flex flex-row flex-basis mt-3 justify-center lg:justify-start">
+                                    <img src="assets/img/lab.png" width="30" height="20">
+                                    <p id = "prod-category">Лабораторные продукции</p>
+                                </div>
+            
+                                <button class="button-6 mt-5" role="button">Подробнее</button>
+                                    
+                            </div>
+
+
+
+
+
+                            <div class="prod-id mt-8">
+                                <img src="assets/img/1.png" id="prod-img">
+            
+                                <p class = "mt-5" id = "prod-title">Панорамный офтальмоскоп</p>
+                                <p class = "mt-1 mb-3.5" id = "company-title">Optos Plc, Великобритания</p>
+            
+                                <p id = "prod-price">320 000 ₸</p>
+            
+                                <div class="category flex flex-row flex-basis mt-3 justify-center lg:justify-start">
+                                    <img src="assets/img/lab.png" width="30" height="20">
+                                    <p id = "prod-category">Лабораторные продукции</p>
+                                </div>
+            
+                                <button class="button-6 mt-5" role="button">Подробнее</button>
+                                    
+                            </div>
+                            <div class="prod-id mt-8">
+                                <img src="assets/img/2.png" id="prod-img">
+            
+                                <p class = "mt-5" id = "prod-title">Mi 23.8” Desktop Monitor 1C</p>
+                                <p class = "mt-1 mb-3.5" id = "company-title">Xiaomi, Китай</p>
+            
+                                <p id = "prod-price">77 000 ₸</p>
+            
+                                <div class="category flex flex-row flex-basis mt-3 justify-center lg:justify-start">
+                                    <img src="assets/img/comp.png" width="30" height="20">
+                                    <p id = "prod-category">Компьютерная периферия</p>
+                                </div>
+            
+                                <button class="button-6 mt-5" role="button">Подробнее</button>
+                                    
+                            </div>
+                            <div class="prod-id mt-8">
+                                <img src="assets/img/3.png" id="prod-img">
+            
+                                <p class = "mt-5" id = "prod-title">NGS-секвенатор Genexus</p>
+                                <p class = "mt-1 mb-3.5" id = "company-title">Thermo Fisher Scientific, США</p>
+            
+                                <p id = "prod-price">493 990 ₸</p>
+            
+                                <div class="category flex flex-row flex-basis mt-3 justify-center lg:justify-start">
+                                    <img src="assets/img/lab.png" width="30" height="20">
+                                    <p id = "prod-category">Лабораторные продукции</p>
+                                </div>
+            
+                                <button class="button-6 mt-5" role="button">Подробнее</button>
+                                    
+                            </div>
+
+
+
+
+                            <div class="prod-id mt-8">
+                                <img src="assets/img/1.png" id="prod-img">
+            
+                                <p class = "mt-5" id = "prod-title">Панорамный офтальмоскоп</p>
+                                <p class = "mt-1 mb-3.5" id = "company-title">Optos Plc, Великобритания</p>
+            
+                                <p id = "prod-price">320 000 ₸</p>
+            
+                                <div class="category flex flex-row flex-basis mt-3 justify-center lg:justify-start">
+                                    <img src="assets/img/lab.png" width="30" height="20">
+                                    <p id = "prod-category">Лабораторные продукции</p>
+                                </div>
+            
+                                <button class="button-6 mt-5" role="button">Подробнее</button>
+                                    
+                            </div>
+                            <div class="prod-id mt-8">
+                                <img src="assets/img/2.png" id="prod-img">
+            
+                                <p class = "mt-5" id = "prod-title">Mi 23.8” Desktop Monitor 1C</p>
+                                <p class = "mt-1 mb-3.5" id = "company-title">Xiaomi, Китай</p>
+            
+                                <p id = "prod-price">77 000 ₸</p>
+            
+                                <div class="category flex flex-row flex-basis mt-3 justify-center lg:justify-start">
+                                    <img src="assets/img/comp.png" width="30" height="20">
+                                    <p id = "prod-category">Компьютерная периферия</p>
+                                </div>
+            
+                                <button class="button-6 mt-5" role="button">Подробнее</button>
+                                    
+                            </div>
+                            <div class="prod-id mt-8">
+                                <img src="assets/img/3.png" id="prod-img">
+            
+                                <p class = "mt-5" id = "prod-title">NGS-секвенатор Genexus</p>
+                                <p class = "mt-1 mb-3.5" id = "company-title">Thermo Fisher Scientific, США</p>
+            
+                                <p id = "prod-price">493 990 ₸</p>
+            
+                                <div class="category flex flex-row flex-basis mt-3 justify-center lg:justify-start">
+                                    <img src="assets/img/lab.png" width="30" height="20">
+                                    <p id = "prod-category">Лабораторные продукции</p>
+                                </div>
+            
+                                <button class="button-6 mt-5" role="button">Подробнее</button>
+                                    
+                            </div>
+
+
+                            <div class="prod-id mt-8">
+                                <img src="assets/img/1.png" id="prod-img">
+            
+                                <p class = "mt-5" id = "prod-title">Панорамный офтальмоскоп</p>
+                                <p class = "mt-1 mb-3.5" id = "company-title">Optos Plc, Великобритания</p>
+            
+                                <p id = "prod-price">320 000 ₸</p>
+            
+                                <div class="category flex flex-row flex-basis mt-3 justify-center lg:justify-start">
+                                    <img src="assets/img/lab.png" width="30" height="20">
+                                    <p id = "prod-category">Лабораторные продукции</p>
+                                </div>
+            
+                                <button class="button-6 mt-5" role="button">Подробнее</button>
+                                    
+                            </div>
+                            <div class="prod-id mt-8">
+                                <img src="assets/img/2.png" id="prod-img">
+            
+                                <p class = "mt-5" id = "prod-title">Mi 23.8” Desktop Monitor 1C</p>
+                                <p class = "mt-1 mb-3.5" id = "company-title">Xiaomi, Китай</p>
+            
+                                <p id = "prod-price">77 000 ₸</p>
+            
+                                <div class="category flex flex-row flex-basis mt-3 justify-center lg:justify-start">
+                                    <img src="assets/img/comp.png" width="30" height="20">
+                                    <p id = "prod-category">Компьютерная периферия</p>
+                                </div>
+            
+                                <button class="button-6 mt-5" role="button">Подробнее</button>
+                                    
+                            </div>
+                            <div class="prod-id mt-8">
+                                <img src="assets/img/3.png" id="prod-img">
+            
+                                <p class = "mt-5" id = "prod-title">NGS-секвенатор Genexus</p>
+                                <p class = "mt-1 mb-3.5" id = "company-title">Thermo Fisher Scientific, США</p>
+            
+                                <p id = "prod-price">493 990 ₸</p>
+            
+                                <div class="category flex flex-row flex-basis mt-3 justify-center lg:justify-start">
+                                    <img src="assets/img/lab.png" width="30" height="20">
+                                    <p id = "prod-category">Лабораторные продукции</p>
+                                </div>
+            
+                                <button class="button-6 mt-5" role="button">Подробнее</button>
+                                    
+                            </div>
+
+
+                            
+
+
+
+                            
+
+                        </div>
+
+                        
+
+
+                    </div>
+
+                   
+    
+    
+                </div>
+    
+
+                <div class="footer mt-32 flex flex-col flex-wrap">
+        
+                    <div class="copyright">
+                        <hr>
+                        <p class = "text-center mt-10" id = "copyright">© 2023 mezzanin.kz  All rights reserved.</p>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

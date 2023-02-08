@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+/* Buttons */
+.button {
+    --color: #121113;
+    padding: 0.5em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+
+    font-weight: 700;
+    font-size: 17px;
+
+    border: 1px solid;
+    color: var(--color);
+    z-index: 1;
+}
+
+.button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+
+.button::before {
+    top: -1em;
+    left: -1em;
+}
+
+.button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+
+.button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+}
+
+.button:hover {
+    color: rgb(255, 255, 255);
+}
+
+.button:active {
+    filter: brightness(.8);
+}
+
+
+
+
+
+
+body{
+    font-family: 'Manrope', sans-serif;
+    color: 121113;  
+    background-color: #ffffff;
+
+    margin-top: 64px;
+    margin-bottom: 64px;
+
+}
+
+
+
+@media only screen and (max-width: 1106px) {
+   
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .butto {
+        margin-top: 20px;        
+    }
+
+    
+}
+
+
+
+
+/* .navbar .logo*/ #title{ 
+    font-size: 30px;
+    font-weight: 800;
+}
+
+
+
+.navbar .pages #subpage {
+    font-size: 18px;
+    font-weight: 700;
+
+    padding-top: 12px;
+    padding-right: 30px
+}
+
+
+.navbar .butto {
+    text-align: right;      
+}
+
+
+
+.welcome{
+    text-align: center;
+}
+
+#grey{
+    color: #676469;
+
+    font-weight: 700;
+    font-size: 16px;
+}  
+
+#h2{
+    font-weight: 800;
+    font-size: 40px;
+}
+
+#h2-small{
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.welcome #paragraph{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+
+
+.products .new .prod-id #prod-img{
+    border: 1px solid #e2dfe4;
+    border-radius: 3%;
+}
+
+.products .new .prod-id #prod-title{
+
+
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.products .new .prod-id #company-title{
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+.products .new .prod-id #prod-price{
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.products .new .prod-id #prod-category{
+    font-weight: 400;
+    font-size: 12px;
+
+    margin-left: 5px;
+    margin-top: 7px;
+}
+
+.categories {
+
+    border-radius: 2%;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.categories .category-grid #sub-category {
+    font-size: 18px;
+    font-weight: 500;
+
+    margin-bottom: -10px;
+}
+
+.categories .category-grid #sub-category:hover {
+    color:#975ad4
+}
+
+.categories #category-title{
+    font-size: 34px;
+    font-weight: 800;
+}
+
+
+
+
+.footer .foots .foot #footitle{
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.footer .foots .foot #foot-title{
+
+    font-weight: 700;
+    font-size: 22px;
+
+    margin-top: 9px;
+    margin-bottom: 20px;
+}
+
+.footer .foots .foot #foot-category {
+    margin-bottom: 10px;
+}
+
+.footer .foots .foot #foot-category:hover {
+    color:#975ad4;
+    font-weight: 700;
+}
+
+.footer .copyright #copyright{
+    margin-bottom: auto;
+    font-size: 12px;
+    font-weight: 600;
+
+    color: #4F4D51;
+}   
